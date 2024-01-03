@@ -1,6 +1,7 @@
-% This Block Calculate all the kinematics information for the following
-% blocks(including foot position, jacobian, jacobian derivative and so on)
-% Copyright 2020
+% OSC QP Block
+% Copy Rights: Tianze Wang, tw19j@fsu.edu, Optimal Robotics Lab, Florida
+% State University
+
 
 classdef IROS_On_board_QP < ...
         matlab.System & ...

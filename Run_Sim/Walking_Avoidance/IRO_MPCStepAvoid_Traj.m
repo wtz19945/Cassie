@@ -1,6 +1,6 @@
-%BREAKINCONTROLLER Break in procedure for Cassie mounted to build stand
-% State Estimation based on Cassie Forward Kinematics
-% Copyright 2020
+% MPC Trajectory Generator Block
+% Copy Rights: Tianze Wang, tw19j@fsu.edu, Optimal Robotics Lab, Florida
+% State University
 
 classdef IRO_MPCStepAvoid_Traj < ...
         matlab.System & ...

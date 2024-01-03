@@ -1,17 +1,6 @@
-%BREAKINCONTROLLER Break in procedure for Cassie mounted to build stand
-%
-% Syntax:
-%   Implements a MATLAB System block for use in Simulink with inputs:
-%     CassieOutBus
-%   and outputs:
-%     CassieUserInBus
-%
-% Description:
-%   This controller is used to break in freshly assembled Cassie robots
-%   mounted to the build stand. The feet trace sinusoidal trajectories
-%   through cartesian space that use all degreees of freedom.
-
-% Copyright 2017-2018 Agility Robotics
+% OSC Block
+% Copy Rights: Tianze Wang, tw19j@fsu.edu, Optimal Robotics Lab, Florida
+% State University
 
 classdef MPC_ModeSwitch < ...
         matlab.System & ...
