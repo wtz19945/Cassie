@@ -6,8 +6,8 @@ Code for publication Real-time Dynamic Bipedal Avoidance: https://ieeexplore.iee
 Support Video: https://www.youtube.com/watch?v=NoBImCZjB5g
 
 ## Requirement
-Please follow the instructions from Agility website: https://github.com/agilityrobotics/cassie-doc/wiki
-The code is implemented and tested in Matlab 2017b, Windows10
+- Please follow the instructions from Agility website: https://github.com/agilityrobotics/cassie-doc/wiki
+- The code is implemented and tested in Matlab 2017b, Windows10
 
 ## Repo Folders
 - Cassie: Simulation files provided by Agility
@@ -22,9 +22,11 @@ The code is implemented and tested in Matlab 2017b, Windows10
 Run start_up.m to add this repo to Matlab path.
 
 Check the folder Run_Sim, this folder contain following example. Note different tasks are included in seperate folders for convenience.
-- Adaptive_StepTime    : Cassie adjust step time based to avoid fast obstacles
-- Avoidance_ModeSwitch : Cassie changes avoidance mode
+- Adaptive_StepTime    : Cassie adjust step time on the fly to avoid fast obstacles
+- Avoidance_ModeSwitch : Cassie changes avoidance mode (avoidance in stance mode and avoidance in stepping mode)
 - Walking_Avoidance    : Cassie avoids multiple obstacles during walking
+
+All the simulation results are in the Videos folder
 
 ## Note
 - Cassie hardware test requires additional codes (the MPC is implemented in C++ on a secondary computer, currently not included in this repo). Thus, the MPC codes
