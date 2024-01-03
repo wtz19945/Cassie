@@ -1,0 +1,39 @@
+syms x y z rotz roty rotx lsr lsp lsy lse
+    x y z rotz roty rotx lsr lsp lsy lse    
+tree = RigidBodyTree(FourLinkWalkerDescriptor);
+
+tree.set_joint_position_by_name('rot_x-joint',p1(t));
+tree.set_joint_velocity_by_name('rot_x-joint',dp1(t));
+
+tree.set_joint_position_by_name('rot_y-joint',p2(t));
+tree.set_joint_velocity_by_name('rot_y-joint',dp2(t));
+
+tree.set_joint_position_by_name('rot_z-joint',p3(t));
+tree.set_joint_velocity_by_name('rot_z-joint',dp3(t));
+
+tree.set_joint_position_by_name('base_x-joint',x(t));
+tree.set_joint_velocity_by_name('base_x-joint',dx(t));
+
+tree.set_joint_position_by_name('base_y-joint',y(t));
+tree.set_joint_velocity_by_name('base_y-joint',dy(t));
+
+tree.set_joint_position_by_name('base_z-joint',z(t));
+tree.set_joint_velocity_by_name('base_z-joint',dz(t));
+
+tree.set_joint_position_by_name('left1-joint',q1(t));
+tree.set_joint_velocity_by_name('left1-joint',dq1(t));
+
+tree.set_joint_position_by_name('left2-joint',q2(t));
+tree.set_joint_velocity_by_name('left2-joint',dq2(t));
+
+tree.set_joint_position_by_name('right1-joint',q3(t));
+tree.set_joint_velocity_by_name('right1-joint',dq3(t));
+
+tree.set_joint_position_by_name('right2-joint',q4(t));
+tree.set_joint_velocity_by_name('right2-joint',dq4(t));
+
+%  tree.get_body_kinematic_by_name('base_x')
+%  tree.get_body_kinematic_by_name('base_y')
+%  tree.get_body_kinematic_by_name('base_z')
+
+% double(subs(a,[p1(t) p2(t) p3(t) dp1(t) dp2(t) dp3(t) x(t) y(t) z(t) dx(t) dy(t) dz(t) q1(t) dq1(t) q2(t) dq2(t)], ones(1,16)))
